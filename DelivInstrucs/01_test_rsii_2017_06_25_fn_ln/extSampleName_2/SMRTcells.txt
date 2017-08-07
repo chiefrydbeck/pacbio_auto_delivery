@@ -1,0 +1,3 @@
+/work/projects/nscdata/PacbioAutomation/TestDataSets/rsii/2017Run07_338/A01_1/
+/work/projects/nscdata/PacbioAutomation/TestDataSets/rsii/2017Run07_338/B01_1/
+/work/projects/nscdata/PacbioAutomation/TestDataSets/rsii/2017Run07_338/C01_1/

@@ -1,0 +1,4 @@
+/work/projects/nscdata/PacbioAutomation/TestDataSets/sequel/r54047_20160503_094159/1_A01/
+/work/projects/nscdata/PacbioAutomation/TestDataSets/sequel/r54047_20160503_094159/2_B01/
+/work/projects/nscdata/PacbioAutomation/TestDataSets/sequel/r54047_20160503_094159/3_C01/
+
