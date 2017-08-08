@@ -14,7 +14,8 @@ sequencer_lower=$( echo "$sequencer" | tr -s  '[:upper:]'  '[:lower:]' )
 echo "cd $where_to_look_for_deliv_instrux/$proj_dir_deliv_instrux"
 cd $where_to_look_for_deliv_instrux/$proj_dir_deliv_instrux
 shopt -s nullglob
-arrOfFileNames=(*/)
+arrOfFileNames_1=(*/)
+arrOfFileNames=${arrOfFileNames_1%?}
 echo "The samples are:"
 printf '%s ' "${arrOfFileNames[@]}"
 echo ""	
@@ -82,6 +83,6 @@ echo "About to send email"
 echo "cat /work/projects/nscdata/PacbioAutomation/Sequel_out_for_norstore_deliv/emails/${projectDeliveryFolder}DeliveryEmail.txt | \
 mailx -s "Sequence ready for download - ${projectDeliveryFolder} - sample ${arrOfFileNames[@]}" $emailRecipients"
 cat /work/projects/nscdata/PacbioAutomation/Sequel_out_for_norstore_deliv/emails/${projectDeliveryFolder}DeliveryEmail.txt | \
-mailx -s "Sequence ready for download - ${projectDeliveryFolder} - sample ${arrOfFileNames[@]}" $emailRecipients
+mailx -s "Sequence ready for download - ${projectDeliveryFolder} - sample ${arrOfFileNames[@]}" ${emailRecipients}
 #rm /work/projects/nscdata/PacbioAutomation/Sequel_out_for_norstore_deliv/emails/${projectDeliveryFolder}DeliveryEmail.txt
 

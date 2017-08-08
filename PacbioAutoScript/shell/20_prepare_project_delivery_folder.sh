@@ -163,4 +163,3 @@ for sampleFolderName in "${arrOfFileNames[@]}"; do
 		echo "The sequencer specified is not recognised"
 	fi
 done
-sed 's/
